@@ -24,4 +24,8 @@ The [SKR mini E3 V3](https://github.com/bigtreetech/BIGTREETECH-SKR-mini-E3) is 
 
 ### Syringe pump
 
-The syringe pump hardware is taken from a model [NE-300 pump](https://www.syringepump.com/NE-300.php). The syringe plunger motion is through a platform connected to a lead screw using an anti-backlash nut.  The lead screw has a lead of 1.27 mm per revolution.
+The syringe pump hardware is taken from a model [NE-300 pump](https://www.syringepump.com/NE-300.php). The syringe plunger motion is through a platform connected to a lead screw using an anti-backlash nut.  The lead screw has a lead of 1.27 mm per revolution. The lead screw is turned using a stepper motor connected with a belt and pulley system giving a motor:screw revolution ratio of 28:15.  The NE-300 stepper motor is a [high precision NEMA-17](https://www.moonsindustries.com/series/nema-17-high-precision-hybrid-stepper-motors-b020402) with 400 full steps per revolution.  Using 1/16 microstepping results in linear movement of the syringe plunger of 0.1 microns per microstep.
+
+### Control software
+
+[Marlin firmware](https://marlinfw.org/) is used for motion control. The motion commands are written in [G-code](https://en.wikipedia.org/wiki/G-code) format and sent to the microcontroller on the control board via serial communication with an attached computer.
