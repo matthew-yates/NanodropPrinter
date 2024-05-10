@@ -19,11 +19,11 @@ $fs = 0.4;
 // cut out for sping loaded syringe holder
 //translate([76,30,-1]) cylinder(h=4,r=9.5);
 // M5 screw holes
-//translate([12,11.7,-1]) cylinder(h=4,r=1.6);
-//translate([79.5,11.7,-1]) cylinder(h=4,r=1.6);
-//translate([16,212,-1]) cylinder(h=4,r=1.6);
-//translate([73.8,212,-1]) cylinder(h=4,r=1.6);
-//translate([45.75,45,-1]) cylinder(h=4,r=1.6);}}
+//translate([12,11.7,-1]) cylinder(h=4,r=2.7);
+//translate([79.5,11.7,-1]) cylinder(h=4,r=2.7);
+//translate([16,212,-1]) cylinder(h=4,r=2.7);
+//translate([73.8,212,-1]) cylinder(h=4,r=2.7);
+//translate([45.75,45,-1]) cylinder(h=4,r=2.7);}}
 //
 // measurements on spindle mount:
 //  width = 90.8 mm
@@ -68,34 +68,44 @@ union(){
         translate([91.5,136,70]) rotate([0,90,0]) cylinder(h=8,r=10);
         translate([91.5,126,2]) cube([8,20,8]);}
     // top left side brace
-    hull(){
-        translate([-7.5,136,70]) rotate([0,90,0]) cylinder(h=8,r=10);
-        translate([-7.5,221,2]) cube([8,1,8]);}
+    translate([-7.5,216.8,3.9]) rotate([49.65,0,0]) cube([8,8,104.3]);
+    translate([-7.5,159,2]) cube([8,3,55]);
+    translate([-7.5,174,2]) cube([8,3,45]);
+    translate([-7.5,189,2]) cube([8,3,30]);
     // bottom left side brace
-    hull(){
-        translate([-7.5,136,70]) rotate([0,90,0]) cylinder(h=8,r=10);
-        translate([-7.5,0,2]) cube([8,1,8]);}
+    translate([-7.5,0,10]) rotate([-62.34,0,0]) cube([8,8,148.7]);
+    translate([-7.5,35,2]) cube([8,3,25]);
+    translate([-7.5,50,2]) cube([8,3,30]);
+    translate([-7.5,65,2]) cube([8,3,40]);
+    translate([-7.5,80,2]) cube([8,3,45]);
+    translate([-7.5,95,2]) cube([8,3,55]);
+    translate([-7.5,110,2]) cube([8,3,60]);
     // top right side brace
-    hull(){
-        translate([91.5,136,70]) rotate([0,90,0]) cylinder(h=8,r=10);
-        translate([91.5,221,2]) cube([8,1,8]);}
+    translate([91.5,216.8,3.9]) rotate([49.65,0,0]) cube([8,8,104.3]);
+    translate([91.5,159,2]) cube([8,3,55]);
+    translate([91.5,174,2]) cube([8,3,45]);
+    translate([91.5,189,2]) cube([8,3,30]);
     // bottom right side brace
-    hull(){
-        translate([91.5,136,70]) rotate([0,90,0]) cylinder(h=8,r=10);
-        translate([91.5,0,2]) cube([8,1,8]);}}
+    translate([91.5,0,10]) rotate([-62.34,0,0]) cube([8,8,148.7]);
+    translate([91.5,35,2]) cube([8,3,25]);
+    translate([91.5,50,2]) cube([8,3,30]);
+    translate([91.5,65,2]) cube([8,3,40]);
+    translate([91.5,80,2]) cube([8,3,45]);
+    translate([91.5,95,2]) cube([8,3,55]);
+    translate([91.5,110,2]) cube([8,3,60]);}
 // M5 screw holes for pump
-translate([12,11.7,1]) cylinder(h=10,r=1.6);
-translate([79.5,11.7,1]) cylinder(h=10,r=1.6);
-translate([16,212,1]) cylinder(h=10,r=1.6);
-translate([73.8,212,1]) cylinder(h=10,r=1.6);
-translate([45.75,45,1]) cylinder(h=10,r=1.6);
+translate([12,11.7,1]) cylinder(h=10,r=2.7);
+translate([79.5,11.7,1]) cylinder(h=10,r=2.7);
+translate([16,212,1]) cylinder(h=10,r=2.7);
+translate([73.8,212,1]) cylinder(h=10,r=2.7);
+translate([45.75,45,1]) cylinder(h=10,r=2.7);
 // M5 screw holes for front of spindle mount 
-translate([9.2,136,1]) cylinder(h=10,r=1.6);
-translate([82.8,136,1]) cylinder(h=10,r=1.6);
+translate([9.2,136,1]) cylinder(h=10,r=2.7);
+translate([82.8,136,1]) cylinder(h=10,r=2.7);
 // screw holes for left side of spindle mount
-translate([-8.5,136,70]) rotate([0,90,0]) cylinder(h=10,r=2.1);
-translate([-8.5,136,30]) rotate([0,90,0]) cylinder(h=10,r=2.1);
+translate([-8.5,136,70]) rotate([0,90,0]) cylinder(h=10,r=2.7);
+translate([-8.5,136,30]) rotate([0,90,0]) cylinder(h=10,r=2.7);
 // screw holes for right side of spindle mount
-translate([90.5,136,70]) rotate([0,90,0]) cylinder(h=10,r=2.1);
-translate([90.5,136,30]) rotate([0,90,0]) cylinder(h=10,r=2.1);
+translate([90.5,136,70]) rotate([0,90,0]) cylinder(h=10,r=2.7);
+translate([90.5,136,30]) rotate([0,90,0]) cylinder(h=10,r=2.7);
 }}
