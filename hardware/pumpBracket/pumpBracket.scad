@@ -89,7 +89,7 @@ translate([79.5,11.7,1]) cylinder(h=10,r=1.6);
 translate([16,212,1]) cylinder(h=10,r=1.6);
 translate([73.8,212,1]) cylinder(h=10,r=1.6);
 translate([45.75,45,1]) cylinder(h=10,r=1.6);
-// M5 screw holes for fron of spindle mount 
+// M5 screw holes for front of spindle mount 
 translate([9.2,136,1]) cylinder(h=10,r=1.6);
 translate([82.8,136,1]) cylinder(h=10,r=1.6);
 // screw holes for left side of spindle mount
