@@ -18,7 +18,7 @@ $fs = 0.4;
 //translate([7,25.5,-1]) cube([28.3,25.3,4]);
 // cut out for sping loaded syringe holder
 //translate([74.8,31.6,-1]) cylinder(h=4,r=10.0);
-// #8 screw holes
+// #6 screw holes
 //translate([12.5,12.0,-1]) cylinder(h=4,r=2.1);
 //translate([78.5,12.0,-1]) cylinder(h=4,r=2.1);
 //translate([45.5,45.5,-1]) cylinder(h=4,r=2.1);
@@ -101,7 +101,7 @@ union(){
     translate([99.5,2,2]) cylinder(h=1,r=7.5);
     translate([-7.5,220,2]) cylinder(h=1,r=7.5);
     translate([99.5,220,2]) cylinder(h=1,r=7.5);}
-// #8 screw holes for pump
+// #6 screw holes for pump
 translate([12.5,12.0,1]) cylinder(h=10,r=2.1);
 translate([78.5,12.0,1]) cylinder(h=10,r=2.1);
 translate([16.75,211.5,1]) cylinder(h=10,r=2.1);
