@@ -30,7 +30,7 @@ color("cornflowerblue"){
 color("indianred"){
 difference(){
     union(){
-        cube([90,20,5]);
+        cube([90,18,5]);
         translate([57,-55,0]) cube([30,55,5]);
         translate([62,-55,5]) rotate([-90,0,0]) cylinder(h=53,r=2);
         translate([82,-55,5]) rotate([-90,0,0]) cylinder(h=53,r=2);}
@@ -38,6 +38,6 @@ difference(){
     hull(){
     translate([72,-49,-1]) cylinder(h=7,r=2.7);
     translate([72,-9,-1]) cylinder(h=7,r=2.7);}
-    // M5 screw holes for mounting
-    translate([11.25,11.7,-1]) cylinder(h=7,r=2.7);
-    translate([78.75,11.7,-1]) cylinder(h=7,r=2.7);}}
+    // #6 screw holes for mounting
+    translate([11.25,11.7,-1]) cylinder(h=7,r=2.1);
+    translate([78.75,11.7,-1]) cylinder(h=7,r=2.1);}}
