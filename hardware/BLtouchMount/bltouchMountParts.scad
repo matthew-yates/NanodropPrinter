@@ -6,14 +6,14 @@ color("cornflowerblue"){
     // bottom plate
     difference(){
         hull(){
-            cylinder(h=5,r=6);
-            translate([0,48,0]) cylinder(h=5,r=6);
-            translate([-11,-6,0]) cube([5,60,5]);}
+            translate([5,0,0]) cylinder(h=5,r=6);
+            translate([5,51,0]) cylinder(h=5,r=6);
+            translate([-6,-6,0]) cube([5,30,5]);}
         // screw holes for top of BL touch
-        translate([0,30,-1]) cylinder(h=7,r=1.6);
-        translate([0,48,-1]) cylinder(h=7,r=1.6);
+        translate([5,33,-1]) cylinder(h=7,r=1.6);
+        translate([5,51,-1]) cylinder(h=7,r=1.6);
         // center hole on BL touch
-        translate([0,39,-1]) cylinder(h=7,r=2);
+        translate([5,42,-1]) cylinder(h=7,r=2);
         // slots for vertical adjustment
         translate([-11,-1,-1]) cylinder(h=27, r=2.1);
         translate([-11,19,-1]) cylinder(h=27, r=2.1);}
@@ -24,8 +24,7 @@ color("cornflowerblue"){
         translate([-15,9,12]) rotate([0,90,0]) cylinder(h=10,r=2.7);
         // slots for vertical adjustment
         translate([-11,-1,-1]) cylinder(h=27, r=2.1);
-        translate([-11,19,-1]) cylinder(h=27, r=2.1);
-}}
+        translate([-11,19,-1]) cylinder(h=27, r=2.1);}}
 //Bracket to attach to pump
 color("indianred"){
 difference(){
