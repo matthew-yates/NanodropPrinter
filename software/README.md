@@ -11,7 +11,7 @@ A USB microscope is used to measure distances from images.  Accurate distances a
 The Jupyter notebook file "cameraCalibration.ipynb" contains detailed annotated code for calibrating the camera. The following steps are involved:
 
 1. The USB microscope is focused on the calibration pattern and an image of this pattern is saved using OpenCV. 
-2. Two x,y pixel coordinates on the image then selected via mouse click. These points have a know distance in millimeters between them from the calibration pattern.
+2. Two x,y pixel coordinates on the image then selected via mouse click. These points have a known distance in millimeters between them from the calibration pattern.
 3. The distance between points in pixels is calculated.
 4. Five repeated calibration measurements are taken, and the mean, maximum, minimum and standard deviation of the measured pixels per mm is reported.
 5. The mean value is stored in a text file for future use as a conversion factor between pixels and millimeters.
