@@ -18,3 +18,4 @@ The Jupyter notebook file "cameraCalibration.ipynb" contains detailed annotated 
 
 The image below is an example image taken after clicking two calibration points.  In this case, a 5 mm calibration distance was selected and the microscope image was 1600x1200 pixels.
 
+![example calibration image](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/calExample.png)
