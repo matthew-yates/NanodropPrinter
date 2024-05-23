@@ -36,6 +36,6 @@ The vertical and horizontal lines of the fiducial marker must be aligned with th
 
 Alignment of the camera image with the directions of the fiducial marker plotted by the printer is achieved by manually rotating the camera.  After it is aligned, the camera is clamped into position. To facilitate alignment, the Jupyter notebook "cameraAlignment.ipynb" can be used. The Python+OpenCV script places vertical and horizontal lines on the camera video feed. An example of camera alignment is shown in the image below.
 
-![example fiducial marker](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/fiducial2.png)
+![example camera alignment](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/fiducial2.png)
 
 In this image, the blue lines are parallel to the fiducial marker lines. There is also a small silicon-based photonic chip in this image that is the target object for subsequent printing.
