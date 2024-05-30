@@ -2,7 +2,7 @@
 
 In order to ensure that fiducial markers are aligned with the X and Y axes of the nanodroplet printer, the printer itself was used as a pen plotter to draw lines. A variety of commercially available pens were tested for this purpose. The goal was to create very fine lines that are uniform in width. The widely available [Pilot G2 Ultra Fine](https://pilotpen.us/Product?0=40&1=29&cid=260) gel pen was selected. The manufacturer claims a line width of 380 microns. Testing showed the pen achieves relatively uniform line widths at or below 380 microns in width.  An example microscope image is show below of a hand drawn line on standard office copy paper. The microscope calibration ruler in the image measures in 100 micron increments. The image shows the pen produces a line ~300 microns in width. 
 
-![pen line with microscope scale](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/g2UltraFineExample.png)
+![pen line with microscope scale](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/g2UltraFineExample.jpg)
 
 The nanodroplet printer does not have an easy mechanism to control the force of contact of the pen in the Z-axis direction. To overcome this, a holder was developed that allows the pen tip a few millimeters of travel in the Z-axis direction. A spring is used to apply relatively constant force between the pen tip and plotting surface after contact is made.
 
