@@ -1,6 +1,6 @@
 $fa = 1.0;
 $fs = 0.4;
-translate([11,-60,0])
+translate([11,-60,5]) rotate([0,180,0])
 // Vertical adjustment mount
 color("cornflowerblue"){
     // bottom plate
@@ -19,12 +19,13 @@ color("cornflowerblue"){
         translate([-11,19,-1]) cylinder(h=27, r=2.1);}
     // side plate
     difference(){
-        translate([-11,-6,0]) cube([5,30,20]);
+        translate([-11,-6,-15]) cube([5,30,20]);
         // M5 screw hole for height adjustment
-        translate([-15,9,12]) rotate([0,90,0]) cylinder(h=10,r=2.7);
+        translate([-15,9,-7]) rotate([0,90,0]) cylinder(h=10,r=2.7);
         // slots for vertical adjustment
-        translate([-11,-1,-1]) cylinder(h=27, r=2.1);
-        translate([-11,19,-1]) cylinder(h=27, r=2.1);}}
+        translate([-11,-1,-16]) cylinder(h=27, r=2.1);
+        translate([-11,19,-16]) cylinder(h=27, r=2.1);
+}}
 //Bracket to attach to pump
 color("indianred"){
 difference(){
