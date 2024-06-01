@@ -12,6 +12,6 @@ The second image below is the fully assembled print bed with the 235x235x4 mm gl
 
 ![assembled print bed with glass](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/printBed2.png)
 
-The parametric design file for the 3D printed parts is provided in "printBedParts.scad". In this file, all the required parts (four corner clamps, two left side supports, and two right side supports) are arranged to all producting in a single print job, as illustrated below.
+The parametric design file for the 3D printed parts is provided in "printBedParts.scad". In this file, half the required parts (two corner clamps, one left side support, and one right side support) are arranged for a single print job, as illustrated below.  The print job must be run twice to produce all of the required parts.
 
 ![print bed parts](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/printBedParts.png)
