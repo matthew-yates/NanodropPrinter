@@ -64,16 +64,8 @@ module cornerclamp(){
     }
 }
 
-// parts for printing
-translate([17,20,0]) cornerclamp();
-translate([17,70,0]) cornerclamp();
-translate([0,0,8]) rotate([0,180,0]) cornersupport(side="left");
-translate([50,0,0]) rotate([0,0,0]) cornersupport(side="right");
-
-translate([0,-30,0]) rotate([0,0,180])
-union(){
-    translate([17,20,0]) cornerclamp();
-    translate([17,70,0]) cornerclamp();
-    translate([0,0,8]) rotate([0,180,0]) cornersupport(side="left");
-    translate([50,0,0]) rotate([0,0,0]) cornersupport(side="right");
-}
+// parts for printing (run print job twice)
+translate([40,70,0]) rotate([0,0,180]) cornerclamp();
+translate([20,30,0]) rotate([0,0,0]) cornerclamp();
+translate([155,20,8]) rotate([0,180,0]) cornersupport(side="left");
+translate([70,130,0]) rotate([0,0,-150]) cornersupport(side="right");
