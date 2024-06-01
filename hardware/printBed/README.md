@@ -10,4 +10,8 @@ In order to attach the 235x235 mm glass print bed to the 216x216 mm build plate,
 
 The second image below is the fully assembled print bed with the 235x235x4 mm glass plate illustrated in white.
 
-![assembled printe bed with glass](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/printBed2.png)
+![assembled print bed with glass](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/printBed2.png)
+
+The parametric design file for the 3D printed parts is provided in "printBedParts.scad". In this file, all the required parts (four corner clamps, two left side supports, and two right side supports) are arranged to all producting in a single print job, as illustrated below.
+
+![print bed parts](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/printBedParts.png)
