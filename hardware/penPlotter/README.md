@@ -20,3 +20,10 @@ After printing these parts, the long part shown in blue is slid inside the 115.5
 
 ![assembled spring loaded plotter pen](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/ultraFineHolderPic.jpg)
  
+The plotter pen is attached to the syringe pump using the spring loaded clip normally used for syringes. A metal C-clamp is then used to firmly hold the plotter pen is place as it is dragged laterally across the printing surface during plotting. An adapter part was designed in "penClampClip.sscad", a model of which is shown below.
+
+![plotter pen c-clamp adapter](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/penClampClip.png)
+
+This C-clamp adapter is placed on top of the plotter pen to prove a flat surface for attaching the clamp. An image of the fully assembled device with the plotter pen held by a small C-clamp is shown below.
+
+![fully assembled plotter pen](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/penClampClip2.jpg)
