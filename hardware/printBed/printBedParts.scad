@@ -51,15 +51,17 @@ module cornerclamp(){
         difference(){
             union(){
                 hull(){
-                    translate([-5,-5,0]) cube([5,30,4]);
-                    translate([-5.5,-5.5,0]) cylinder(h=4,r=5);
+                    translate([-5,-5,0]) cube([8,30,6]);
+                    translate([-5.5,-5.5,0]) cylinder(h=6,r=5);
                 }
                 hull(){
-                    translate([0,-5,0]) cube([25,5,4]);
-                    translate([-5.5,-5.5,0]) cylinder(h=4,r=5);
+                    translate([0,-5,0]) cube([25,8,6]);
+                    translate([-5.5,-5.5,0]) cylinder(h=6,r=5);
                 }
             }
-            translate([-4,-4,-1]) cylinder(h=6,r=2.7);
+            translate([-4,-4,-1]) cylinder(h=8,r=2.7);
+            translate([0,0,2.5]) cube([40,40,4]);
+            translate([0,0,-1]) cube([5,5,10]);
         }
     }
 }
