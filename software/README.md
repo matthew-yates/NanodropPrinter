@@ -2,7 +2,7 @@
 
 The Marlin firmware configuration and compiled firmware for the the SKR mini E3 V3.0 board is maintained in in a separate repository:
 
-[https://github.com/matthew-yates/Marlin2.1.2.2_SKRminiE3V3.0](https://github.com/matthew-yates/Marlin2.1.2.2_SKRminiE3V3.0)
+[https://github.com/matthew-yates/Marlin](https://github.com/matthew-yates/Marlin)
 
 ### Camera calibration
 
