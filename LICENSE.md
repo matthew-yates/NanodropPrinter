@@ -2,7 +2,7 @@ The C-Beam machine hardware design was created by Openbuils, LLC.  Under the ter
 
 "This design incorporates [OpenBuilds, LLC](https://openbuilds.com/) design work(s) shared Open Source under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) License."
 
-This license in summery:
+This license in summary:
 
 "This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
 
