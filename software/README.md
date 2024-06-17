@@ -1,8 +1,88 @@
-### Motion control firmware
+# Instructions
 
-The Marlin firmware configuration and compiled firmware for the the SKR mini E3 V3.0 board is maintained in in a separate repository:
+## 1. Set up laptop for external instrument control
+
+Although any operating system can be use in principle, all development and testing was done using the Debian Linux operating system.  The instructions here refer to that operating system and should be applicable to other Debian-based operating systems (Ubuntu, Mint, etc.).
+
+### 1.1 Python related packages
+
+After installing the Linux operating system, run the following command as root to install Python related packages:
+
+```
+apt install python3-full python3-numpy python3-scipy python3-sympy python3-matplotlib python3-opencv python3-pandas python3-serial python3-spyder jupyter-notebook
+```
+
+The above commands install a number of libraries used for scientific and numerical methods, serial communication, computer vision, the Spyder IDE for editing code, and Jupyter notebook client for running code interactively.
+
+### 1.2 Serial communication
+
+The user needs to be added to the "dialout" group in order to gain required permissions for sending commands to the printer. Run the following command as root to do this:
+
+```
+usermod -a -G dialout $USER
+```
+
+Where "$USER" is the name of the user to be added to the dialout group.
+
+It is also recommended that PuTTY serial console be installed by running the following command as root:
+
+```
+apt install putty
+```
+
+PuTTY is not required, but can be useful in troubleshooting. To open a serial console to the instrument, use the speed (baudrate) setting of 115200.  The serial line is normally "/dev/ttyACM0". The serial line can be confirmed by running the command "dmesg" as root immediately after plugging the instrument into a USB port.  The PuTTY console can be left running in the background in order to display responses from the instrument.  For example, sending the G-code command "M119" will cause the instrument to respond with the current logic state of all endstop switches, which will be displayed on the PuTTY console.
+
+### 1.3 PlatformIO
+
+The [PlatformIO](https://docs.platformio.org/en/latest/core/index.html) command line interface is used for compiling the Marlin firmware. It is recommended that PlatformIO be installed on the laptop used for instrument control to facilitate making changes to firmware settings. First, install curl by running the following command as root:
+
+```
+apt install curl
+```
+
+Next, run the following two commands as a normal user:
+
+```
+curl -fsSL -o get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
+python3 get-platformio.py
+```
+
+This installation script will create a Python virtual environment in the user home directory in which platformio is installed.  The following two commands can be run as root to provide system-wide commands "platformio" and "pio" for any user to run:
+
+```
+ln -s /home/$USER/.platformio/penv/bin/platformio /usr/bin/platformio
+ln -s /home/$USER/.platformio/penv/bin/pio /usr/bin/pio
+```
+
+Where "$USER" is the name of the user account used to run the platformio installation script.
+
+## 2. Configure and install Marlin
+
+A fork of the Marlin firmware used for the the SKR mini E3 V3.0 board is maintained in in a separate repository:
 
 [https://github.com/matthew-yates/Marlin](https://github.com/matthew-yates/Marlin)
+
+This repository can be downloaded as a zip archive.  After extracting the archive, run the following two commands as normal user from the directory containing the "platformio.ini" file:
+
+```
+platformio run --target clean -e STM32G0B1RE_btt_xfer
+platformio run -e STM32G0B1RE_btt_xfer
+```
+
+The resulting compiled firmware will be found in the hidden subdirectory named ".pio/build/STM32G0B1RE_btt_xfer" found in the same directory that contains the "platformio.ini" file.
+
+The compiled firmware is named "firmware.bin". Copy the compiled firmware to a microSD card formatted with the FAT32 filesystem. Insert the microSD card into the slot on the SKR mini E3 V3.0 board. The firmware will be installed from the microSD card automatically when the board is powered on.
+
+The forked Marlin repository linked above contains the configuration files "Configuration.h" and "Configuration_adv.h" that can be edited if firmware changes are needed.
+
+## 3. XYZ motion calibration
+
+### 3.1 Lead screw calibration and XY plane skew
+
+Refer to the README in the directory [leadCalibration](https://github.com/matthew-yates/NanodropPrinter/tree/main/software/leadCalibration). The calibration pattern provided is plotted using a pen plotter to calibrate linear travel per rotation of the lead screw and check for skew in the XY plane.
+
+### 3.2 Backlash
+
 
 ### Camera calibration
 
