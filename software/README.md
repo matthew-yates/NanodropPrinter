@@ -75,13 +75,15 @@ The compiled firmware is named "firmware.bin". Copy the compiled firmware to a m
 
 The forked Marlin repository linked above contains the configuration files "Configuration.h" and "Configuration_adv.h" that can be edited if firmware changes are needed.
 
-## 3. XYZ motion calibration
+## 3. Motion calibration
 
-### 3.1 Lead screw calibration and XY plane skew
+### 3.1 X and Y axis lead screw calibration and XY plane skew
 
 Refer to the README in the directory [leadCalibration](https://github.com/matthew-yates/NanodropPrinter/tree/main/software/leadCalibration). The calibration pattern provided is plotted using a pen plotter to calibrate linear travel per rotation of the lead screw and check for skew in the XY plane.
 
-### 3.2 Backlash
+### 3.2 Z-axis syringe pump lead screw calibration
+
+Movement on the Z-axis and syringe pump lead screws was measured using electronic calipers.  The microsteps per mm settings in the firmware were adjusted until the actual movement matched programmed movement.
 
 
 ### Camera calibration
