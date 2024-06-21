@@ -1,4 +1,4 @@
-## Sender G-code motion commands via serial communication
+## Sending G-code motion commands via serial communication
 
 The Jupyter notebook "gcodeSender.ipynb" is used to send an arbitrary sequence of G-code motion commands from an attached laptop through USB serial connection to the printer.  The motion commands are read from a comma separated variable file that has absolute positions of X, Y, Z, and E (syringe pump/extruder) in individual columns.  Two example csv files are provided that can be used with a pen plotter.  The file "circle.csv" plots a single circle having a radius of 30 mm.  The file "plotPoints.csv" produces 4 concentric rectangles used for linear lead screw travel calibration.
 
