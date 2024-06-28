@@ -6,7 +6,7 @@ Syringe dispenser for accurately placing nanoliter scale liquid droplets on surf
 
 The XYZ motion platform hardware is the [OpenBuilds C-Beam Machine](https://openbuildspartstore.com/openbuilds-c-beam-machine/):
 
-![C-Beam Machine](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/cbeammachine.jpg)
+![C-Beam Machine](https://github.com/matthew-yates/NanodropPrinter/blob/main/images/cBeamMachine.png)
 
 Identical [NEMA-23 stepper motors](https://openbuildspartstore.com/nema-23-stepper-motor/) with peak current of 2.8 A are used for the X, Y, and Z axes.
 
